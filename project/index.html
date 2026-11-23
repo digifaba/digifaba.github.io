@@ -1,0 +1,194 @@
+---
+layout: default
+title: Project
+---
+<div class="page-head"><div class="wrap">
+  <p class="kicker">The project</p>
+  <h1>Decoding faba bean yield stability</h1>
+  <p class="lead">From in-field image data to mechanistic models.</p>
+</div></div>
+
+<section><div class="wrap two">
+  <div>
+    <h2>Why faba bean, why drought?</h2>
+    <p>Grain legumes deliver protein with less fertiliser. Faba bean is one of the most promising for temperate climates.</p>
+    <p>Its weak spot is a dry spell during flowering, and these are becoming more common in Northern Europe.</p>
+  </div>
+  <div class="fate">
+    <figure>
+      <svg viewBox="0 0 160 230" role="img" aria-label="Drawing of a plant with enough water, carrying flowers and full pods">
+        <g fill="none" stroke="#2f6b3a" stroke-width="5" stroke-linecap="round"><path d="M80 205V50"/></g>
+        <g fill="#5d9c52"><path d="M80 165C50 168 34 152 28 132c28-4 48 8 52 33zM80 150c30 3 46-13 52-33-28-4-48 8-52 33zM80 95C56 98 42 84 38 68c24-3 39 7 42 27zM80 84c24 3 38-11 42-27-24-3-39 7-42 27z"/></g>
+        <g fill="#fff" stroke="#17211a" stroke-width="2"><circle cx="66" cy="54" r="9"/><circle cx="95" cy="50" r="9"/><circle cx="80" cy="34" r="9"/></g>
+        <g fill="#17211a"><circle cx="66" cy="54" r="3"/><circle cx="95" cy="50" r="3"/><circle cx="80" cy="34" r="3"/></g>
+        <g fill="#7fbf5f" stroke="#2f6b3a" stroke-width="2"><path d="M82 120c14-2 24 8 25 26-15 0-25-9-25-26zM78 125c-14-2-24 8-25 26 15 0 25-9 25-26zM82 182c12-2 22 6 23 21-14 0-23-7-23-21z"/></g>
+        <path d="M10 207h140" stroke="#7a5a3a" stroke-width="7" stroke-linecap="round"/>
+        <g fill="#5fa8d3"><path d="M20 18c5 7 8 11 8 15a8 8 0 0 1-16 0c0-4 3-8 8-15zM138 12c5 7 8 11 8 15a8 8 0 0 1-16 0c0-4 3-8 8-15z"/></g>
+      </svg>
+      <figcaption><b>Enough water</b>Flowers become pods</figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 160 230" role="img" aria-label="Drawing of a plant under drought, with drooping leaves, fallen flowers and a single small pod">
+        <g fill="none" stroke="#7d7a3c" stroke-width="5" stroke-linecap="round"><path d="M80 205c0-60-4-90 6-130"/></g>
+        <g fill="#a8a356"><path d="M80 150c-22 0-42 14-44 40 22-2 40-14 44-40zM80 138c22 0 42 14 44 40-22-2-40-14-44-40zM82 92c-18 0-32 12-34 32 18-1 30-12 34-32zM84 84c18 0 32 12 34 32-18-1-30-12-34-32z"/></g>
+        <g fill="#fff" stroke="#8a7d6d" stroke-width="2"><circle cx="88" cy="66" r="7"/><circle cx="30" cy="198" r="7"/><circle cx="52" cy="200" r="6"/><circle cx="128" cy="199" r="7"/></g>
+        <path d="M80 170c8-1 14 4 15 14-9 0-15-5-15-14z" fill="#c2bd6a" stroke="#7d7a3c" stroke-width="2"/>
+        <path d="M10 207h140M40 208l8 12-6 8M100 208l-6 10 8 8" fill="none" stroke="#b08a5c" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="132" cy="28" r="15" fill="#e39a3b"/><g stroke="#e39a3b" stroke-width="4" stroke-linecap="round"><path d="M132 4v-2M106 28h-4M113 9l-3-3M113 47l-3 3M132 52v4"/></g>
+      </svg>
+      <figcaption><b>Drought</b>Flowers are lost</figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>What we look for</h2>
+  <p class="lead">Five signs on the plant. Select a blue marker.</p>
+  <div class="two" data-spots>
+    <div class="spots">
+      <img src="{{ '/assets/img/field-plant.jpg' | relative_url }}" width="606" height="876" alt="Flowering faba bean plant in the field with five numbered markers">
+      <button type="button" style="left:58.3%;top:6.1%" aria-pressed="true" aria-label="1. Leaf angle"></button>
+      <button type="button" style="left:60.4%;top:17.2%" aria-pressed="false" aria-label="2. Leaf elongation"></button>
+      <button type="button" style="left:47.7%;top:24.7%" aria-pressed="false" aria-label="3. Flowers"></button>
+      <button type="button" style="left:61.2%;top:75.1%" aria-pressed="false" aria-label="4. Pods"></button>
+      <button type="button" style="left:11.7%;top:44.9%" aria-pressed="false" aria-label="5. Height"></button>
+    </div>
+    <ul class="trait-list" aria-live="polite">
+      <li class="on"><b>1. Leaf angle</b><span>Early observations: short of water, varieties hold their leaves differently.</span></li>
+      <li><b>2. Leaf elongation</b><span>How fast leaves lengthen also varies under water deficit.</span></li>
+      <li><b>3. Flowers</b><span>How many open, and how many are lost.</span></li>
+      <li><b>4. Pods</b><span>Their number and size make the yield.</span></li>
+      <li><b>5. Height</b><span>A simple trace of growth through the season.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How it fits together</h2>
+  <p class="lead">Experiments sit at the centre. They feed every model, and every model helps interpret them.</p>
+  <div class="map"><svg viewBox="0 0 640 520" role="group" aria-label="Diagram of the five work packages and how they connect">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#2f6b3a"/></marker></defs>
+    <g stroke="#2f6b3a" stroke-width="5" fill="none">
+      <path d="M232 200L196 138" marker-start="url(#ar)" marker-end="url(#ar)"/><path d="M408 200l36-62" marker-start="url(#ar)" marker-end="url(#ar)"/>
+      <path d="M232 320l-36 62" marker-start="url(#ar)" marker-end="url(#ar)"/><path d="M408 320l36 62" marker-start="url(#ar)" marker-end="url(#ar)"/>
+      <path d="M70 136v246" marker-end="url(#ar)"/><path d="M570 136v246" marker-end="url(#ar)"/><path d="M256 445h126" marker-end="url(#ar)"/>
+    </g>
+    <g text-anchor="middle" font-size="24" fill="#17211a">
+      <a href="#wp2"><rect x="20" y="20" width="230" height="110" rx="18" fill="#fff" stroke="#a9d18e" stroke-width="3"/><text x="135" y="66" font-weight="700">See</text><text x="135" y="100" font-size="21">Computer vision</text></a>
+      <a href="#wp3"><rect x="390" y="20" width="230" height="110" rx="18" fill="#fff" stroke="#a9d18e" stroke-width="3"/><text x="505" y="66" font-weight="700">Measure</text><text x="505" y="100" font-size="21">Shape analysis</text></a>
+      <a href="#wp1"><rect x="190" y="205" width="260" height="110" rx="18" fill="#cfe6bf" stroke="#2f6b3a" stroke-width="3"/><text x="320" y="251" font-weight="700">Grow</text><text x="320" y="285" font-size="21">Agronomy</text></a>
+      <a href="#wp4"><rect x="20" y="390" width="230" height="110" rx="18" fill="#fff" stroke="#a9d18e" stroke-width="3"/><text x="135" y="436" font-weight="700">Follow</text><text x="135" y="470" font-size="21">Growth profiles</text></a>
+      <a href="#wp5"><rect x="390" y="390" width="230" height="110" rx="18" fill="#fff" stroke="#a9d18e" stroke-width="3"/><text x="505" y="436" font-weight="700">Predict</text><text x="505" y="470" font-size="21">Crop model</text></a>
+    </g>
+  </svg></div>
+</div></section>
+
+<section id="wp1" class="alt"><div class="wrap two">
+  <div>
+    <p class="kicker">1 · Grow</p><h2>What makes a yield stable?</h2>
+    <dl class="qa">
+      <div><dt>How</dt><dd>Greenhouse and field trials expose plants to drought, different soils and sowing times. We track leaves, water use, flowers and pods.</dd></div>
+      <div><dt>Outcome</dt><dd>The traits worth screening for, and data for everyone else.</dd></div>
+    </dl>
+  </div>
+  <figure><div class="frame trio">
+    <img src="{{ '/assets/img/cam-low.jpg' | relative_url }}" width="632" height="500" loading="lazy" alt="Potted plant seen from the side">
+    <img src="{{ '/assets/img/cam-medium.jpg' | relative_url }}" width="632" height="500" loading="lazy" alt="Same plant seen from above at an angle">
+    <img src="{{ '/assets/img/cam-high.jpg' | relative_url }}" width="632" height="500" loading="lazy" alt="Same plant seen from high above">
+  </div><figcaption class="cap">One greenhouse plant, filmed from three heights.</figcaption></figure>
+</div></section>
+
+<section id="wp2"><div class="wrap two flip">
+  <div>
+    <p class="kicker">2 · See</p><h2>Can a computer spot every leaf, flower and pod?</h2>
+    <dl class="qa">
+      <div><dt>How</dt><dd>Large vision models are fine-tuned to outline plant parts, despite weeds, clutter and changing light.</dd></div>
+      <div><dt>Outcome</dt><dd>Open-source tools that read yield components from field images.</dd></div>
+    </dl>
+  </div>
+  <figure><div class="ba tall">
+    <img src="{{ '/assets/img/leaf-mask.jpg' | relative_url }}" width="414" height="670" loading="lazy" alt="The same plant with every plant pixel coloured orange by the computer">
+    <img class="over" src="{{ '/assets/img/leaf-photo.jpg' | relative_url }}" width="414" height="670" loading="lazy" alt="Photo of a faba bean plant in a greenhouse">
+    <span class="l">Photo</span><span class="r">Found</span>
+    <input type="range" min="0" max="100" value="50" aria-label="Compare photo and detected plant">
+  </div><figcaption class="cap" style="text-align:center">Today: the whole plant. Next: each leaf, flower and pod.</figcaption></figure>
+</div></section>
+
+<section id="wp3" class="alt"><div class="wrap two">
+  <div>
+    <p class="kicker">3 · Measure</p><h2>How do you compare two shapes?</h2>
+    <dl class="qa">
+      <div><dt>How</dt><dd>Instead of a few landmarks, we smoothly warp one whole shape onto another. The warp itself is the measurement.</dd></div>
+      <div><dt>Outcome</dt><dd>Statistics on whole shapes, capturing leaf angle and elongation.</dd></div>
+    </dl>
+  </div>
+  <div>
+    <div class="draw"><svg class="anim" viewBox="0 0 400 210" role="img" aria-label="Animation of a leaf and a grid bending smoothly into another shape">
+      <g fill="none" stroke="#cfd6c4" stroke-width="2">
+        <path d="M40 40H360"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M40 40Q200 40 360 40;M40 40Q200 -5 360 70;M40 40Q200 40 360 40"/></path>
+        <path d="M40 80H360"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M40 80Q200 80 360 80;M40 80Q200 35 360 110;M40 80Q200 80 360 80"/></path>
+        <path d="M40 120H360"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M40 120Q200 120 360 120;M40 120Q200 75 360 150;M40 120Q200 120 360 120"/></path>
+        <path d="M40 160H360"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M40 160Q200 160 360 160;M40 160Q200 115 360 190;M40 160Q200 160 360 160"/></path>
+        <path d="M120 25V180M200 25V180M280 25V180"/>
+      </g>
+      <path fill="#7fbf5f" fill-opacity=".85" stroke="#2f6b3a" stroke-width="4" d="M50 110C120 40 260 40 350 110C260 180 120 180 50 110Z"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M50 110C120 40 260 40 350 110C260 180 120 180 50 110Z;M50 110C130 10 270 10 350 150C250 160 140 140 50 110Z;M50 110C120 40 260 40 350 110C260 180 120 180 50 110Z"/></path>
+      <path fill="none" stroke="#2f6b3a" stroke-width="3" d="M50 110Q200 110 350 110"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M50 110Q200 110 350 110;M50 110Q200 70 350 150;M50 110Q200 110 350 110"/></path>
+    </svg></div>
+    <figure style="margin-top:16px"><img class="frame" src="{{ '/assets/img/three-days.jpg' | relative_url }}" width="800" height="390" loading="lazy" alt="Silhouettes of one plant on three days, overlaid in blue, green and red, seen from two sides">
+    <figcaption class="cap">One plant on three consecutive days: blue, green, red. Between days two and three the stem bends.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="wp4"><div class="wrap two flip">
+  <div>
+    <p class="kicker">4 · Follow</p><h2>Can a growth curve reveal stress?</h2>
+    <dl class="qa">
+      <div><dt>How</dt><dd>We model each plant's whole growth curve, not just a few summary numbers, and relate it to management and environment.</dd></div>
+      <div><dt>Outcome</dt><dd>A method to detect stress from individual plants.</dd></div>
+    </dl>
+  </div>
+  <figure><div class="draw"><svg viewBox="0 0 400 250" role="img" aria-label="Illustrative growth curves: one expected, one falling below it under stress">
+    <path d="M45 15v190h340" fill="none" stroke="#55645a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M45 198C140 195 150 50 270 40S360 38 380 38" fill="none" stroke="#2f6b3a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M45 198C140 195 150 110 225 108S330 112 380 110" fill="none" stroke="#b9601f" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 10"/>
+    <g font-size="17"><text x="290" y="28" fill="#2f6b3a" font-weight="700">expected</text><text x="298" y="136" fill="#b9601f" font-weight="700">stressed</text><text x="215" y="234" fill="#55645a" text-anchor="middle">time</text><text x="24" y="110" fill="#55645a" text-anchor="middle" transform="rotate(-90 24 110)">size</text></g>
+  </svg></div><figcaption class="cap">Illustration, not data.</figcaption></figure>
+</div></section>
+
+<section id="wp5" class="alt"><div class="wrap two">
+  <div>
+    <p class="kicker">5 · Predict</p><h2>What if next summer is dry?</h2>
+    <dl class="qa">
+      <div><dt>How</dt><dd>We build a faba bean module, including flower loss, for DAISY, a model of soil, plant and atmosphere.</dd></div>
+      <div><dt>Outcome</dt><dd>Yield explored under many weather scenarios, to guide breeding.</dd></div>
+    </dl>
+  </div>
+  <div class="draw"><svg viewBox="0 0 400 300" role="img" aria-label="Diagram of weather, plant and soil feeding into a yield prediction">
+    <rect x="0" y="0" width="400" height="185" rx="12" fill="#e6f1f7"/><path d="M0 185h400v103a12 12 0 0 1-12 12H12a12 12 0 0 1-12-12z" fill="#b08a5c"/>
+    <circle cx="55" cy="50" r="22" fill="#e3a53b"/><g fill="none" stroke="#5fa8d3" stroke-width="5" stroke-linecap="round"><path d="M104 62l-6 18M124 62l-6 18M144 62l-6 18"/></g><path d="M98 54a13 13 0 0 1 2-26 18 18 0 0 1 33 4 12 12 0 0 1 8 22z" fill="#fff" stroke="#9bb8c6" stroke-width="2"/>
+    <path d="M150 185V95M150 185c-6 40-30 45-40 70M150 185c0 45 6 60 2 90M150 185c8 40 30 40 42 66" fill="none" stroke="#2f6b3a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M150 150c-26 2-40-12-45-30 25-3 42 8 45 30zM150 140c26 2 40-12 45-30-25-3-42 8-45 30zM150 100c-20 2-31-9-35-23 20-2 33 6 35 23zM150 98c20 2 31-9 35-23-20-2-33 6-35 23z" fill="#5d9c52"/>
+    <path d="M215 135h45" stroke="#17211a" stroke-width="5"/><path d="M256 124l18 11-18 11z" fill="#17211a"/>
+    <rect x="284" y="90" width="98" height="88" rx="12" fill="#fff" stroke="#17211a" stroke-width="3"/><g fill="#7fbf5f"><rect x="298" y="138" width="16" height="28"/><rect x="325" y="120" width="16" height="46"/></g><rect x="352" y="148" width="16" height="18" fill="#b9601f"/>
+    <g font-size="17" font-weight="700" fill="#17211a"><text x="14" y="112">weather</text><text x="165" y="60">plant</text><text x="14" y="212" fill="#fff">soil</text><text x="333" y="78" text-anchor="middle">yield</text></g>
+  </svg></div>
+</div></section>
+
+<section id="video-to-3d" class="dark"><div class="wrap">
+  <span class="badge">First results · greenhouse seedlings</span>
+  <h2 style="margin-top:14px">From video to 3D plant</h2>
+  <p class="lead">Film a pot for half a minute. Get back a 3D model of the plant, and only the plant.</p>
+  <div class="pipe">
+    <div><div class="pic"><svg viewBox="0 0 200 200" role="img" aria-label="Three cameras circling a potted plant at three heights">
+      <g fill="none" stroke-width="3"><ellipse cx="100" cy="45" rx="60" ry="14" stroke="#7fbf5f"/><ellipse cx="100" cy="90" rx="72" ry="18" stroke="#e3a53b"/><ellipse cx="100" cy="128" rx="80" ry="20" stroke="#5fa8d3"/></g>
+      <path d="M100 150v-38M100 130c-14 1-22-6-25-17 14-2 24 5 25 17zM100 122c14 1 22-6 25-17-14-2-24 5-25 17z" fill="#5d9c52" stroke="#5d9c52" stroke-width="3"/><path d="M78 150h44l-6 34H84z" fill="#3a4a40"/>
+      <g fill="#fff"><rect x="148" y="38" width="18" height="13" rx="3"/><rect x="163" y="84" width="18" height="13" rx="3"/><rect x="170" y="122" width="18" height="13" rx="3"/></g>
+    </svg></div><h3>1. Film</h3><p>Three cameras circle the plant.</p></div>
+    <div><div class="pic"><img src="{{ '/assets/img/find.jpg' | relative_url }}" width="512" height="512" loading="lazy" alt="Plant in a pot, coloured orange by the segmentation"></div><h3>2. Find</h3><p>AI separates the plant from everything else.</p></div>
+    <div><div class="pic"><img src="{{ '/assets/img/plant-shaded.jpg' | relative_url }}" width="690" height="627" loading="lazy" alt="Grey shaded 3D model of a plant"></div><h3>3. Rebuild</h3><p>All views merge into one 3D model.</p></div>
+    <div><div class="pic"><img src="{{ '/assets/img/three-days.jpg' | relative_url }}" width="800" height="390" loading="lazy" style="object-position:0 0" alt="Overlaid silhouettes of one plant on several days"></div><h3>4. Follow</h3><p>The same plant, compared day after day.</p></div>
+  </div>
+  <div class="facts"><div><b>3</b>cameras</div><div><b>11 min</b>of video</div><div><b>20 / 20</b>plants rebuilt</div></div>
+  <figure><img class="frame" src="{{ '/assets/img/gallery.jpg' | relative_url }}" width="1500" height="1200" loading="lazy" alt="Gallery of twenty faba bean plants reconstructed in 3D">
+  <figcaption class="cap">All 20 plants from one recording session, at the same scale. Field images, flowers and pods come next. Built with COLMAP, SAM 3 and Gaussian Wrapping.</figcaption></figure>
+</div></section>

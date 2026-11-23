@@ -1,0 +1,48 @@
+---
+layout: default
+title: Home
+---
+<div class="hero"><div class="wrap">
+  <div class="hero-text">
+    <h1>Beans that keep their yield when the rain doesn't come</h1>
+    <p>DIGIFABA turns images of faba bean plants into knowledge breeders can use.</p>
+    <a class="btn" href="{{ '/project/' | relative_url }}">Discover the project</a>
+    <a class="btn ghost" href="{{ '/project/#video-to-3d' | relative_url }}">See first results</a>
+  </div>
+  <figure><img src="{{ '/assets/img/hero-plants.webp' | relative_url }}" width="960" height="465" alt="Four young faba bean plants, reconstructed in 3D from video"></figure>
+</div></div>
+
+<section><div class="wrap cards">
+  <div class="card dry"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-dry"/></svg>
+    <h3>The problem</h3><p>Faba bean is rich in protein, but drought during flowering makes its yield unreliable.</p></div>
+  <div class="card"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-eye"/></svg>
+    <h3>The idea</h3><p>Plants show their stress. We teach computers to see it, measure it and model it.</p></div>
+  <div class="card"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-bean"/></svg>
+    <h3>The payoff</h3><p>Better traits to breed for, and steadier harvests of a climate-friendly protein.</p></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>From a plant to a prediction</h2>
+  <ol class="steps">
+    <li><a href="{{ '/project/#wp1' | relative_url }}"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-sprout"/></svg><b>Grow</b><span>Agronomy</span></a></li>
+    <li><a href="{{ '/project/#wp2' | relative_url }}"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-eye"/></svg><b>See</b><span>Computer vision</span></a></li>
+    <li><a href="{{ '/project/#wp3' | relative_url }}"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-shape"/></svg><b>Measure</b><span>Shape analysis</span></a></li>
+    <li><a href="{{ '/project/#wp4' | relative_url }}"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-curve"/></svg><b>Follow</b><span>Growth profiles</span></a></li>
+    <li><a href="{{ '/project/#wp5' | relative_url }}"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-weather"/></svg><b>Predict</b><span>Crop model</span></a></li>
+  </ol>
+</div></section>
+
+<section class="dark"><div class="wrap two">
+  <div>
+    <p class="kicker">First results</p>
+    <h2>A real plant, rebuilt in 3D</h2>
+    <p class="lead">Drag the line to move from photo to 3D model.</p>
+    <a class="btn" href="{{ '/project/#video-to-3d' | relative_url }}">How it works</a>
+  </div>
+  <div class="ba">
+    <img src="{{ '/assets/img/plant-mesh.jpg' | relative_url }}" width="690" height="627" alt="3D model of the same plant on a black background">
+    <img class="over" src="{{ '/assets/img/plant-photo.jpg' | relative_url }}" width="690" height="627" alt="Photo of a young faba bean plant in a pot">
+    <span class="l">Photo</span><span class="r">3D model</span>
+    <input type="range" min="0" max="100" value="50" aria-label="Compare photo and 3D model">
+  </div>
+</div></section>
